@@ -1,18 +1,18 @@
 variable "region" {
   type    = string
-  default = "ap-southeast-1"  # CloudFront expects ACM resources in ap-southeast-1 region only
+  default = "ap-southeast-1" # CloudFront expects ACM resources in ap-southeast-1 region only
 }
 
 variable "bucket-name" {
-    type = string
+  type = string
 }
 
 variable "tag_key_Name" {
-    type = string
+  type = string
 }
 
 variable "acm_certificate_arn" {
-    type = string
+  type = string
 }
 
 variable "extra_tags" {
@@ -23,14 +23,14 @@ variable "extra_tags" {
 
 
 variable "domain_name" {
-    type = string
+  type = string
 }
 
 variable "log_bucket" {
-    type = string
+  type = string
 }
 
 variable "log_prefix" {
-    type = string
-    default = "*"
+  type    = string
+  default = "*"
 }

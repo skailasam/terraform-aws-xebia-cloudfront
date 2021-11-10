@@ -3,7 +3,7 @@ provider "aws" {
   region = var.region
   default_tags {
     tags = var.extra_tags
-  } 
+  }
 }
 
 // LOCALS
@@ -64,7 +64,7 @@ module "cloudfront" {
         enabled              = true
         origin_shield_region = var.region
       }
-    }   
+    }
   }
 
   origin_group = {
